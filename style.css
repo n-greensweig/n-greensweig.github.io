@@ -1,10 +1,111 @@
+body {
+  border: double;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #FEF9E7;
+}
+
 .personal-info {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 10% 20%;
+  font-weight: normal;
+  font-family: Serif, Arial, Helvetica, sans-serif;
   text-align: center;
-  
 }
 
 .headshot {
- text-align: right;
+  padding-top: 10px;
+  float: right;
+}
+
+.umn {
+  display: flex;
+  justify-content: space-between;
+  color: #ffcc33;
+  text-align: justify;
+}
+
+.primary-college {
+  text-align: center;
+  flex-basis: 50%;
+  background-color: #7a0019;
+}
+
+.primary-location {
+  flex-basis: 50%;
+  color: #7a0019;
+  text-align: center;
+  background-color: #ffcc33;
+}
+
+.umn-two {
+  display: flex;
+  justify-content: space-between;
+  color: #ffcc33;
+  background-color: #7a0019;
+  text-align: center;
+}
+
+.degree {
+  flex-basis: 50%;
+  color: #7a0019;
+  background-color: #ffcc33;
+  text-align: center;
+}
+
+.grad-date {
+  flex-basis: 50%;
+  text-align: center;
+}
+
+.glasgow {
+  display: flex;
+  text-align: center;
+}
+
+.study-abroad {
+  color: #003865;
+  background-color: #ffffff;
+  flex-basis: 50%;
+}
+
+.sa-location {
+  color: #003865;
+  background-color: #ffffff;
+  flex-basis: 50%;
+}
+
+.sa-dates {
+  color: #003865;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 1px;
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: normal;
+  margin: 1px;
+}
+
+h3 {
+  text-transform: uppercase;
+  margin: 1px;
+}
+
+h4 {
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+p {
+  margin: 1px;
+}
+
+.certifications {
+  margin-bottom: 20px;
 }
