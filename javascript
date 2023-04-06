@@ -1,0 +1,12 @@
+const text = "Work Experience";
+let index = 0;
+
+function typeWriter() {
+  if (index < text.length) {
+    document.getElementById("typewriter-text").innerHTML += text.charAt(index);
+    index++;
+    setTimeout(typeWriter, 50);
+  }
+}
+
+typeWriter();
