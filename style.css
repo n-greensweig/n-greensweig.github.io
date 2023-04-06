@@ -4,7 +4,36 @@ body {
   padding-bottom: 12px;
   padding-left: 20px;
   padding-right: 20px;
-  background-color: #FEF9E7;
+  background-image: linear-gradient(90deg, #b5d5ff 0%, #fff 50%, #b5d5ff 100%);
+  background-size: 400% 400%;
+  animation: wavy 7s ease-in-out infinite;
+}
+
+@keyframes wavy {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+input {
+  border: double;
+  font-family: Serif, Arial, Helvetica, sans-serif;
+}
+
+input:hover {
+  content: "Click me";
+  display: block;
+  color: red;
+}
+
+a:hover {
+  background-color: white;
 }
 
 .personal-info {
@@ -14,8 +43,13 @@ body {
 }
 
 .headshot {
-  padding-top: 10px;
   float: right;
+  display: inline;
+}
+
+.headshot-two {
+  float: right;
+  display: inline;
 }
 
 .umn {
@@ -67,18 +101,34 @@ body {
   color: #003865;
   background-color: #ffffff;
   flex-basis: 50%;
+  border-color: #003865;
+  border-style: solid;
+  border-bottom-style: none;
 }
 
 .sa-location {
   color: #003865;
   background-color: #ffffff;
   flex-basis: 50%;
+  border-color: #003865;
+  border-style: solid;
+  border-left-style: none;
+  border-bottom-style: none;
+  
+}
+
+.glasgow-two {
+  display: flex;
+  background-color: #ffffff;
+  border-color: #003865;
+  border-style: solid;
 }
 
 .sa-dates {
   color: #003865;
   background-color: #ffffff;
-  text-align: center;
+  flex-basis: 85%;
+  text-align: right;
 }
 
 h1 {
@@ -94,7 +144,7 @@ h2 {
 
 h3 {
   text-transform: uppercase;
-  margin: 1px;
+  margin-bottom: 1px;
 }
 
 h4 {
@@ -108,4 +158,9 @@ p {
 
 .certifications {
   margin-bottom: 20px;
+}
+
+.cert-date {
+  float: right;
+  margin-right: 50%;
 }
