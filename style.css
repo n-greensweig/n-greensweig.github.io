@@ -7,6 +7,8 @@ body {
   background-image: linear-gradient(90deg, #b5d5ff 0%, #fff 50%, #b5d5ff 100%);
   background-size: 400% 400%;
   animation: wavy 20s ease-in-out infinite;
+  width: 100%;
+  text-overflow: ellipsis; /* add ellipsis to indicate truncated text */
 }
 
 @keyframes wavy {
@@ -21,6 +23,33 @@ body {
   }
 }
 
+@media only screen and (min-width: 768px) {
+      /* Medium screens */
+      body {
+        font-size: 18px;
+      }
+    }
+    
+    @media only screen and (min-width: 992px) {
+      /* Large screens */
+      body {
+        font-size: 20px;
+      }
+    }
+
+.personal-info {
+  font-weight: normal;
+  font-family: Serif, Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.headshot {
+  float: right;
+  display: inline;
+  padding-top: 50px;
+  margin-right: 1%;
+}
+
 input {
   border: double;
   font-family: Serif, Arial, Helvetica, sans-serif;
@@ -32,18 +61,25 @@ input:hover {
   color: #7a0019;
 }
 
-.umn-table tr td {
+.umn-table td {
   background-color: #7a0019;
   color: #ffcc33;
   text-align: center;
   border: 1.5px solid;
-  border-collapse: collapse;
   margin-bottom: 10px;
   margin-left: 10px;
   border-radius: 2px;
 }
 
-.glasgow-table tr td {
+.umn-table td:first-child {
+    width: 350px;
+}
+
+.glasgow-table td:first-child {
+  width: 350px;
+}
+
+.glasgow-table td {
   color: #003865;
   background-color: #ffffff;
   border-color: #003865;
@@ -53,6 +89,25 @@ input:hover {
   margin-bottom: 10px;
   margin-left: 10px;
   border-radius: 2px;
+}
+
+.umn-table input[type=submit] {
+  background-color: #7a0019;
+  color: #ffcc33;
+  border: double 1px;
+  padding: 6px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.umn-table input[type=submit]:hover {
+  background-color: #ffcc33;
+  color: #7a0019;
 }
 
 table {
@@ -68,28 +123,15 @@ a {
 }
 
 a:hover {
-  box-shadow: inset 400px 0 0 0 #54b3d6;
+  box-shadow: inset 500px 0 0 0 #54b3d6;
   color: white;
-}
-
-.personal-info {
-  font-weight: normal;
-  font-family: Serif, Arial, Helvetica, sans-serif;
-  text-align: center;
-}
-
-.headshot {
-  float: right;
-  display: inline;
-  padding-top: 50px;
-  margin-right: 100px;
 }
 
 .work-experience {
   border-style: groove double;
   border-radius: 10px;
   margin-top: 20px;
-  margin-right: 400px;
+  margin-right: 10%;
   padding-top: 1px;
   padding-right: 10px;
   padding-left: 10px;
@@ -143,50 +185,6 @@ a:hover {
 .grad-date {
   flex-basis: 50%;
   text-align: center;
-}
-
-.glasgow {
-  display: flex;
-  text-align: center;
-  margin-top: 15px;
-  margin-right: 400px;
-  margin-left: 10px;
-}
-
-.study-abroad {
-  color: #003865;
-  background-color: #ffffff;
-  flex-basis: 50%;
-  border-color: #003865;
-  border-style: solid;
-  border-bottom-style: none;
-}
-
-.sa-location {
-  color: #003865;
-  background-color: #ffffff;
-  flex-basis: 50%;
-  border-color: #003865;
-  border-style: solid;
-  border-left-style: none;
-  border-bottom-style: none;
-  
-}
-
-.glasgow-two {
-  display: flex;
-  background-color: #ffffff;
-  border-color: #003865;
-  border-style: solid;
-  margin-right: 400px;
-  margin-left: 10px;
-}
-
-.sa-dates {
-  color: #003865;
-  background-color: #ffffff;
-  flex-basis: 75%;
-  text-align: right;
 }
 
 h1 {
