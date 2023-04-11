@@ -7,7 +7,6 @@ body {
   background-image: linear-gradient(90deg, #b5d5ff 0%, #fff 50%, #b5d5ff 100%);
   background-size: 400% 400%;
   animation: wavy 20s ease-in-out infinite;
-  width: 100%;
   text-overflow: ellipsis; /* add ellipsis to indicate truncated text */
 }
 
@@ -37,18 +36,18 @@ body {
       }
     }
 
-.personal-info {
+header {
   font-weight: normal;
   font-family: Serif, Arial, Helvetica, sans-serif;
   text-align: center;
 }
 
 img {
-  width: 200px;
-  height: 200px;
+  width: 10%;
+  height: 20%;
   border-radius: 50%;
   position: absolute;
-  margin-right: 10%;
+  margin-right: 5%;
   top: 5%;
   right: 0;
   overflow-x: hidden;
@@ -135,16 +134,9 @@ a:hover {
   border-style: groove double;
   border-radius: 10px;
   margin-top: 20px;
-  margin-right: 10%;
   padding-top: 1px;
   padding-right: 10px;
-  padding-left: 10px;
-  
-}
-
-.headshot-two {
-  float: right;
-  display: inline;
+  padding-left: 10px; 
 }
 
 .umn {
@@ -226,4 +218,3 @@ li {
 .certifications {
   margin-bottom: 20px;
 }
-
