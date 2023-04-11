@@ -68,17 +68,16 @@ input:hover {
   background-color: #7a0019;
   color: #ffcc33;
   text-align: center;
-  border: 1.5px solid;
+  border: 0px solid;
   margin-bottom: 10px;
   margin-left: 10px;
   border-radius: 2px;
+  min-width: 100px;
+  height: 40px;
+  box-shadow: 0 0 20px #ffcc33;
 }
 
 .umn-table td:first-child {
-    width: 350px;
-}
-
-.glasgow-table td:first-child {
   width: 350px;
 }
 
@@ -87,11 +86,18 @@ input:hover {
   background-color: #ffffff;
   border-color: #003865;
   text-align: center;
-  border: 1.5px solid;
-  border-collapse: collapse;
+  border: 0px solid;
+  border-collapse: separate;
   margin-bottom: 10px;
   margin-left: 10px;
   border-radius: 2px;
+  min-width: 100px;
+  height: 40px;
+  box-shadow: 0 0 20px #003865;
+}
+
+.glasgow-table td:first-child {
+  width: 350px;
 }
 
 .umn-table input[type=submit] {
@@ -115,6 +121,8 @@ input:hover {
 
 table {
   margin-left: 10px;
+  min-width: 200px;
+  overflow-x: hidden;
 }
 
 a {
