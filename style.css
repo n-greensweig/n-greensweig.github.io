@@ -43,13 +43,15 @@ body {
   text-align: center;
 }
 
-.headshot {
+img {
   width: 200px;
   height: 200px;
   border-radius: 50%;
   position: absolute;
-  top: 20px;
-  right: 20px;
+  margin-right: 10%;
+  top: 5%;
+  right: 0;
+  overflow-x: hidden;
 }
 
 input {
@@ -225,7 +227,3 @@ li {
   margin-bottom: 20px;
 }
 
-.cert-date {
-  float: right;
-  margin-right: 50%;
-}
