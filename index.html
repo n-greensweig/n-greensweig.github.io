@@ -6,7 +6,20 @@
   <title>Noah Greensweig Resume</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" type="image/x-icon" href="https://www.clipartmax.com/png/middle/227-2270443_certification-transparent-growing-plant-gif-animation.png">
-  <script src="https://n-greensweig.github.io/n-greensweig.github.io/javascript.js"></script>
+  	<script type="text/javascript">
+const text = "Work Experience";
+let index = 0;
+
+function typeWriter() {
+  if (index < text.length) {
+    document.getElementById("typewriter-text").innerHTML += text.charAt(index);
+    index++;
+    setTimeout(typeWriter, 50);
+  }
+}
+
+typeWriter();
+	</script>
 </head>
 <body>
   
@@ -67,6 +80,7 @@
     
     <ul>
       <li>Write Google Apps Script and HTML code to automate tasks and migrate the Institute's grant administration process from SurveyMonkey to Google Workspace to increase accessibility and reduce costs</li>
+      <li>Write Google Sheets queries and regular expression formulas</li>
       <li>Create final report surveys to collect and analyze grant outcome data</li>
       <li>Launch grant stewardship team to support grantees in applying for and receiving additional funding</li>
       <li>Manage and oversee the Institute's internal non-sponsored grants portfolio with minimal supervision</li>
@@ -106,8 +120,7 @@
           
   <div class="certifications">
     <h3><u>Certifications</u></h3>
-    <p><i><a href="https://drive.google.com/file/d/1-e3qGLd5nMl9pu3bwFJwUG1_x9SEChMh/view?usp=share_link" target="_blank">Project management certification</a></i> | University of Minnesota</p>
-    <div class="cert-date"<p>October 2022</p></div>
+    <p><i><a href="https://drive.google.com/file/d/1-e3qGLd5nMl9pu3bwFJwUG1_x9SEChMh/view?usp=share_link" target="_blank">Project management certification</a></i> | University of Minnesota | October 2022</p>
           </div>
           
           <div class="skills">
