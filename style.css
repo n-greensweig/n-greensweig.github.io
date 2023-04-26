@@ -42,6 +42,7 @@ header {
   text-align: center;
 }
 
+
 img {
   width: 250px;
   height: 250px;
@@ -62,6 +63,14 @@ input {
 
 input:hover {
   color: #7a0019;
+}
+
+.umn-table {
+  position: relative;
+}
+
+.glasgow-table {
+  position: relative;
 }
 
 .umn-table td {
@@ -88,7 +97,6 @@ input:hover {
   border-color: #003865;
   text-align: center;
   border: 0px solid;
-  border-collapse: separate;
   margin-bottom: 10px;
   margin-left: 10px;
   border-radius: 2px;
