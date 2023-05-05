@@ -190,3 +190,19 @@ li {
 .certifications {
   margin-bottom: 20px;
 }
+
+button {
+  background-image: linear-gradient(90deg, #b5d5ff 0%, #fff 50%, #b5d5ff 100%);
+  background-size: 400% 400%;
+  animation: wavy 7s ease-in-out infinite;
+  border: solid;
+  border-color: darkgray;
+  color: darkgray;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: underline;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
